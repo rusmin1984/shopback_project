@@ -1,17 +1,17 @@
 <?php
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+//use Monolog\Logger;
+//use Monolog\Handler\StreamHandler;
 
 class SpendTask extends MainTask
 {
-    private $log_spend;
+    //private $log_spend;
 
     public function initialize()
     {
         parent::initialize();
-        $this->log_spend = new Logger("Shopback Spend");
-        $this->log_spend->pushHandler(new StreamHandler($_ENV['MONO_LOG']."shopback_spend.log", Logger::INFO ));
+        //$this->log_spend = new Logger("Shopback Spend");
+        //$this->log_spend->pushHandler(new StreamHandler($_ENV['MONO_LOG']."shopback_spend.log", Logger::INFO ));
     }
 
     public function indexAction($params){
@@ -28,7 +28,7 @@ class SpendTask extends MainTask
         }
 
         echo $result;
-        $this->log_spend->addInfo($result);
+        //$this->log_spend->addInfo($result);
     }
 
 }

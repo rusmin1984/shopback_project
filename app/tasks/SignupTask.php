@@ -1,17 +1,17 @@
 <?php
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+//use Monolog\Logger;
+//use Monolog\Handler\StreamHandler;
 
 class SignupTask extends MainTask
 {
-    private $log_signup;
+    //private $log_signup;
 
     public function initialize()
     {
         parent::initialize();
-        $this->log_signup = new Logger("Shopback Signup");
-        $this->log_signup->pushHandler(new StreamHandler($_ENV['MONO_LOG']."shopback_signup.log", Logger::INFO ));
+        //$this->log_signup = new Logger("Shopback Signup");
+        //$this->log_signup->pushHandler(new StreamHandler($_ENV['MONO_LOG']."shopback_signup.log", Logger::INFO ));
 
     }
 
@@ -24,7 +24,7 @@ class SignupTask extends MainTask
         }
 
         echo $result;
-        $this->log_signup->addInfo($result);
+        //$this->log_signup->addInfo($result);
     }
 
 }

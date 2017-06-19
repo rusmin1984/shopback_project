@@ -1,17 +1,17 @@
 <?php
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+//use Monolog\Logger;
+//use Monolog\Handler\StreamHandler;
 
 class RedeemTask extends MainTask
 {
-    private $log_redeem;
+    //private $log_redeem;
 
     public function initialize()
     {
         parent::initialize();
-        $this->log_redeem = new Logger("Shopback Redeem");
-        $this->log_redeem->pushHandler(new StreamHandler($_ENV['MONO_LOG']."shopback_redeem.log", Logger::INFO ));
+        //$this->log_redeem = new Logger("Shopback Redeem");
+        //$this->log_redeem->pushHandler(new StreamHandler($_ENV['MONO_LOG']."shopback_redeem.log", Logger::INFO ));
     }
 
     public function indexAction($params){
@@ -22,7 +22,7 @@ class RedeemTask extends MainTask
         }
 
         echo $result;
-        $this->log_redeem->addInfo($result);
+        //$this->log_redeem->addInfo($result);
 
     }
 

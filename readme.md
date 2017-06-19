@@ -1,16 +1,5 @@
 # SHOPBACK BATCHPROCESSOR #
 
-ENV File
-
-    ;PATH
-    MONO_LOG = ..\logs\
-
-Vendor
-- including monolog, env
-
-Logs :
-- including spend, redeem, signup logs
-
 Apps :
 
 * Helper : 
