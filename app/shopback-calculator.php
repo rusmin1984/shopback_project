@@ -41,8 +41,8 @@ $loader->register();
 /**
  * Load our config
  */
-$dotenv = new Dotenv\Dotenv(__DIR__ . '/../');
-$dotenv->load();
+//$dotenv = new Dotenv\Dotenv(__DIR__ . '/../');
+//$dotenv->load();
 
 // Create a console application
 $console = new ConsoleApp();
