@@ -1,0 +1,21 @@
+{
+    "name": "rusmin1984/shopback_project",
+    "description": "Shopback exercise problem 2",
+    "type": "project",
+    "license": "1",
+    "authors": [
+        {
+            "name": "rusmin1984",
+            "email": "rusmin84@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+        "psr-0": {
+            "ShopBack": "app/"
+        }
+    }
+}
